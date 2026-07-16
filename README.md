@@ -1,6 +1,6 @@
 # Nerdy
 
-Nerdy is a nerd-vibed Hugo theme for personal portfolios and blogs. Designed by Gemini 3.5 Pro and implemented by GPT-5.5.
+Nerdy is a nerd-vibed Hugo theme for personal portfolios and blogs.
 
 **Live demo and documentation:** <https://nerdy.hugo-themes.com>
 

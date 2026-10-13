@@ -49,7 +49,7 @@ npm run server:local
 
 Then open <http://localhost:1313>.
 
-The demo and documentation site lives in `exampleSite/`. It imports the local theme checkout through Hugo Modules.
+The demo and documentation site lives in `site/`. It imports the local theme checkout through Hugo Modules.
 
 ## Build the demo site
 
@@ -57,7 +57,7 @@ The demo and documentation site lives in `exampleSite/`. It imports the local th
 npm run build
 ```
 
-The generated site is written to `exampleSite/public/`.
+The generated site is written to `site/public/`.
 
 Use the npm scripts instead of calling `hugo` directly. They add `node_modules/.bin` to `PATH` and prepare Hugo build stats before Tailwind compiles the final stylesheet.
 
@@ -123,9 +123,9 @@ npm install
 
 `hugo mod npm pack` reads Nerdy's `package.hugo.json`, creates `packages/hugoautogen/package.json`, and adds that generated package as an npm workspace. This keeps Tailwind, Alpine.js, and other theme asset dependencies in sync without copying them by hand.
 
-Then copy only the data files, assets, and content structure you want from `exampleSite/`, such as `data/sidebar.yaml`, `data/home/`, `data/terminal/`, and `content/posts/`.
+Then copy only the data files, assets, and content structure you want from `site/`, such as `data/sidebar.yaml`, `data/home/`, `data/terminal/`, and `content/posts/`.
 
-If you copy from `exampleSite/hugo.yaml`, do not copy the `module.replacements` line. That line is only for this repository so the demo site can point at the local theme checkout.
+If you copy from `site/hugo.yaml`, do not copy the `module.replacements` line. That line is only for this repository so the demo site can point at the local theme checkout.
 
 Start your site with:
 

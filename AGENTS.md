@@ -11,10 +11,10 @@
 
 ## Repo shape
 
-- Root files are the reusable Hugo theme; `exampleSite/` is the live demo and documentation site.
-- `exampleSite/hugo.yaml` imports `github.com/hugo-themes/nerdy` with `module.replacements: github.com/hugo-themes/nerdy -> ../..`; keep this local-module wiring intact.
-- Docs are authored as posts under `exampleSite/content/posts/`, using subject/topic/series folders; keep docs user-focused, not maintainer release checklists.
-- The home page is data-driven from `exampleSite/data/home/*`, `exampleSite/data/sidebar.yaml`, and `exampleSite/data/terminal/*`.
+- Root files are the reusable Hugo theme; `site/` is the live demo and documentation site.
+- `site/hugo.yaml` imports `github.com/hugo-themes/nerdy` with `module.replacements: github.com/hugo-themes/nerdy -> ../..`; keep this local-module wiring intact.
+- Docs are authored as posts under `site/content/posts/`, using subject/topic/series folders; keep docs user-focused, not maintainer release checklists.
+- The home page is data-driven from `site/data/home/*`, `site/data/sidebar.yaml`, and `site/data/terminal/*`.
 
 ## Theme wiring gotchas
 
@@ -27,4 +27,4 @@
 ## Generated files
 
 - Do not commit generated output: `public/`, `resources/_gen/`, `.hugo_build.lock`, `hugo_stats.json`, or `node_modules/`.
-- Cloudflare/Wrangler serves static assets from `exampleSite/public`; build it with `npm run build` first.
+- Cloudflare/Wrangler serves static assets from `site/public`; build it with `npm run build` first.

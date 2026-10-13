@@ -5,12 +5,12 @@ quick: true
 weight: 30
 roles:
   - title: Postgraduate Student
-    company: School of Cyber Science and Technology, Sun Yat-sen University
+    company: Sun Yat-sen University
     period: Sep 2027 - Jun 2030
     highlights:
       - Further work is coming soon.
   - title: Undergraduate Student
-    company: College of Computer Science, Northwest University
+    company: Northwest University
     period: Sep 2023 - Jun 2027
     highlights:
       - Awarded National Scholarship for Undergraduate Students in the sophomore year.

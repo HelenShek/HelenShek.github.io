@@ -12,6 +12,8 @@ tags:
   - Attention
 ---
 
+**Description:** We design a lightweight cloud-edge collaborative two-stage Network Intrusion Detection Systems (NIDS) architecture balancing detection accuracy, resource consumption and real-time requirements in edge environments. Lightweight intrusion feature detection is executed on the edge side, while high-precision attack type classification is completed in the cloud. This design significantly reduces model complexity and computational overhead on edge devices while maintaining high accuracy and low false-negative rate, effectively improving the detection efficiency, practical deployability and response capability of the system.
+
 **Authors:** **Fengyuan Shi** and Zuanhui Lin 
 
 **Published in:** *Applied Sciences*, 16(14), Article 7302, 2026.

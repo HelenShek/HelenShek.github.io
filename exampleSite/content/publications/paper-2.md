@@ -9,6 +9,8 @@ tags:
   - Web Application Security
 ---
 
+**Description:** We build a context-aware SQL injection detection framework leveraging a multi-agent honeypot to construct a large request-response paired dataset. Experiments demonstrate that incorporating request-response context greatly improves detection performance against obfuscated and evolving SQL injection attacks.
+
 **Authors:** Hao Yu, Hui Li, **FengYuan Shi**, Wenjie Yu, PinHan Ho, Zehua Wang, and Bin Wang
 
 **Published in:** *ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, Pages 14132 - 14136, 2026.

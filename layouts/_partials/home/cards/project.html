@@ -1,9 +1,16 @@
 {{- $accent := .accent | default "cyan" -}}
 {{- $accentClasses := partial "components/accent-classes.html" $accent -}}
 {{- $projectType := or .type .label -}}
+{{- $dialogID := printf "project-%s-description" (.title | urlize) -}}
 
-<details class="group nerdy-card nerdy-card-hover {{ $accentClasses.card }} relative overflow-hidden">
-  <summary class="flex cursor-pointer list-none flex-col p-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-cyan [&::-webkit-details-marker]:hidden">
+<article x-data class="nerdy-card nerdy-card-hover {{ $accentClasses.card }} relative overflow-hidden">
+  <button
+    class="group flex w-full flex-col p-6 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-cyan"
+    type="button"
+    aria-haspopup="dialog"
+    aria-controls="{{ $dialogID }}"
+    x-on:click="$refs.projectDescription.showModal()"
+  >
     <div class="flex items-start justify-between gap-4">
       <div class="min-w-0">
         <h3 class="text-xl font-bold tracking-tight nerdy-card-title {{ $accentClasses.title }}">{{ .title }}</h3>
@@ -23,13 +30,33 @@
         {{ end }}
       </div>
     {{ end }}
-    <span class="mt-4 font-mono text-xs text-accent-cyan group-open:hidden">Click to read full description</span>
-    <span class="mt-4 hidden font-mono text-xs text-accent-cyan group-open:inline">Hide description</span>
-  </summary>
-  <div class="border-t border-slate-300/60 px-6 pb-6 pt-4 text-sm leading-6 nerdy-muted dark:border-slate-700/70">
-    <p>{{ .description }}</p>
-    {{ if or .links .stars }}
-      <div class="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
+    <span class="mt-4 font-mono text-xs text-accent-cyan">Click to read full description</span>
+  </button>
+  <dialog
+    id="{{ $dialogID }}"
+    class="m-auto max-h-[85vh] w-[calc(100%-2rem)] max-w-2xl overflow-y-auto rounded-2xl border border-slate-300 bg-white p-0 text-slate-900 shadow-2xl backdrop:bg-slate-950/70 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
+    aria-labelledby="{{ $dialogID }}-title"
+    x-ref="projectDescription"
+    x-on:click.self="$el.close()"
+  >
+    <div class="p-6 sm:p-8">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 id="{{ $dialogID }}-title" class="text-xl font-bold tracking-tight nerdy-card-title {{ $accentClasses.title }}">{{ .title }}</h3>
+          {{ with .role }}<p class="mt-1 text-sm nerdy-muted-soft">{{ . }}</p>{{ end }}
+        </div>
+        <button class="shrink-0 rounded-lg border border-slate-300 px-3 py-1.5 text-sm nerdy-muted transition-colors hover:text-accent-cyan dark:border-slate-700" type="button" aria-label="Close project description" x-on:click="$refs.projectDescription.close()">Close</button>
+      </div>
+      <p class="mt-5 whitespace-pre-line text-sm leading-7 nerdy-muted">{{ .description }}</p>
+      {{ with .tech }}
+        <div class="mt-5 flex flex-wrap gap-2">
+          {{ range . }}
+            <span class="rounded-full border border-slate-300/70 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] leading-none nerdy-muted-soft dark:border-slate-700/80 dark:bg-slate-800/70">{{ . }}</span>
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ if or .links .stars }}
+        <div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-slate-300/60 pt-4 dark:border-slate-700/70">
         {{ with .links }}
           <div class="flex flex-wrap items-center gap-4">
             {{ range . }}
@@ -48,7 +75,8 @@
             <span>{{ . }}</span>
           </span>
         {{ end }}
-      </div>
-    {{ end }}
-  </div>
-</details>
+        </div>
+      {{ end }}
+    </div>
+  </dialog>
+</article>

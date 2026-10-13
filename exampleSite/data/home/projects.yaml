@@ -36,7 +36,7 @@ items:
       - Redis
       - Celery
     accent: cyan
-    type: Collaboration
+    type: Collaborative
   - title: Hanwen Zhijian — Ancient Chinese Character Recognition & Document Management System
   # 汉文智鉴——古汉字智能识别与文献管理系统
     role: Developer
@@ -50,7 +50,7 @@ items:
       - DBSCAN
       - Canvas
     accent: cyan
-    type: Collaboration
+    type: Collaborative
     # stars: 890
     # links:
     #   - label: Code
@@ -68,7 +68,7 @@ items:
       - ResNet
       - PCSBTT
     accent: cyan
-    type: Collaboration
+    type: Collaborative
   - title: Hazardous Materials Management System
   # 危险品管理系统
     role: Project Lead
@@ -77,4 +77,4 @@ items:
     tech:
       - C
     accent: cyan
-    type: Collaboration
+    type: Collaborative

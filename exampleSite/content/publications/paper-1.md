@@ -12,7 +12,7 @@ tags:
   - Attention
 ---
 
-**Authors:** Fengyuan Shi and Zuanhui Lin 
+**Authors:** **Fengyuan Shi** and Zuanhui Lin 
 
 **Published in:** *Applied Sciences*, 16(14), Article 7302, 2026.
 

@@ -44,7 +44,7 @@
   {{ with $summary }}<p class="mb-4 line-clamp-2 text-sm leading-6 nerdy-muted">{{ . }}</p>{{ end }}
   {{ with $tags }}
     <div class="flex flex-wrap gap-2">
-      {{ range first 3 . }}
+      {{ range . }}
         <span class="{{ $accentClasses.chip }}">#{{ . }}</span>
       {{ end }}
     </div>

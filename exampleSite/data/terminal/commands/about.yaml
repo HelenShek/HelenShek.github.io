@@ -7,5 +7,9 @@ greeting: Hello!
 person_name: "Fengyuan Shi"
 summary: I am a Computer Science student interested in applying AI to real-world problems.
 details:
-  - My research includes network intrusion detection, SQL injection detection, and programming learning analytics.
-  - I also build software projects spanning web platforms, data analysis, and AI-assisted learning.
+  - I enjoy exploring theoretical approaches to solve real-world challenges, while implementing reliable, well-structured systems to validate ideas.
+  - My research mainly focuses on trustworthy AI and AI for security. I also have exposure to robotics, embodied AI, human-computer interaction, intelligent education, and cybersecurity.
+  - I build software projects spanning web platforms and plugins, data analysis, and AI-assisted learning and detection systems.
+quote:
+  text: First, solve the problem. Then, write the code.
+  author: John Johnson

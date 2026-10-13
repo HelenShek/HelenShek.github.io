@@ -16,7 +16,7 @@ items:
     description: A PTA plugin leveraging multi-agent systems and static code analysis. It delivers student-side real-time code diagnosis, multi-scale learning profiles, and a teacher dashboard for class analytics and automated teaching recommendations.
     # url: https://github.com/gopher/ecommerce-api
   - name: Campus Mutual Aid Platform
-    type: Collaboration
+    type: Collaborative
     role: Developer
     tech:
       - HTML/CSS
@@ -27,7 +27,7 @@ items:
     description: A Django-powered B/S campus community supporting Q&A, information sharing, item exchange and instant communication among college students.
     # url: https://github.com/gopher/cli-task
   - name: Hanwen Zhijian — Ancient Chinese Character Recognition & Document Management System
-    type: Collaboration
+    type: Collaborative
     role: Developer
     tech:
       - Flask
@@ -39,7 +39,7 @@ items:
     description: A YOLOv8-based system for ancient character detection and recognition on Northwest China land deed images. It provides archive management and keyword search to streamline ancient document research.
     # url: https://demo.example.com/collab
   - name: Picture Composition Class Teaching Assistant System Based on the Multi-rounds Question and Answering Interaction
-    type: Collaboration
+    type: Collaborative
     role: Developer
     tech:
       - Spring Boot
@@ -49,7 +49,7 @@ items:
       - PCSBTT
     description: An LLM-based teaching assistant for picture-guided writing. It features multi-turn prompting and modular scoring to assist young learners and ease teachers' grading burden.
   - name: Hazardous Materials Management System
-    type: Collaboration
+    type: Collaborative
     role: Developer
     tech:
       - C

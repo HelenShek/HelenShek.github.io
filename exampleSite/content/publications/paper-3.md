@@ -10,7 +10,7 @@ tags:
   - Sequence Mining
 ---
 
-**Authors:** Haochen Yan, Xiaofeng Su, Zexi Huang, Zhizezhang Gao, Fengyuan Shi, Huiya Wang, and Jun Feng
+**Authors:** Haochen Yan, Xiaofeng Su, Zexi Huang, Zhizezhang Gao, **Fengyuan Shi**, Huiya Wang, and Jun Feng
 
 **Published in:** *ACM-TURC '26: Proceedings of the ACM Turing Award Celebration Conference - China 2026*, Pages 95 - 101, 2026.
 

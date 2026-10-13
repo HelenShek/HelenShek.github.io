@@ -1,16 +1,10 @@
-user: guest
+user: fengyuan
 host: portfolio
 directory: "~"
-window_title: "guest@portfolio:~"
+window_title: "fengyuan@portfolio:~"
 auto_command: about
 builtins:
-  - name: clear
-    description: Clear terminal output
+  - name: help
+    description: List available commands
   - name: whoami
     description: Print current user
-  - name: date
-    description: Display current system date
-  - name: echo
-    description: Print text back to the terminal
-  - name: sudo
-    description: Try elevated privileges

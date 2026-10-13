@@ -1,6 +1,12 @@
 {{- $section := .section | default "posts" -}}
 {{- $limit := .limit | default 3 -}}
-{{- $posts := first $limit ((where site.RegularPages "Section" $section).ByDate.Reverse) -}}
+{{- $pages := where site.RegularPages "Section" $section -}}
+{{- if .sort_by -}}
+  {{- $pages = sort $pages .sort_by "desc" -}}
+{{- else -}}
+  {{- $pages = $pages.ByDate.Reverse -}}
+{{- end -}}
+{{- $posts := first $limit $pages -}}
 {{- $fallbackPosts := .items | default slice -}}
 {{- $hasPosts := gt (len $posts) 0 -}}
 {{- $hasFallbackPosts := gt (len $fallbackPosts) 0 -}}
@@ -24,7 +30,7 @@
       )) }}
     {{ end }}
 
-    {{ if or $hasPosts $hasFallbackPosts }}
+    {{ if and (ne .show_view_all false) (or $hasPosts $hasFallbackPosts) }}
       <a class="group flex items-center justify-center nerdy-card-dashed p-5" href="{{ relURL (printf "%s/" $section) }}">
         <span class="font-mono text-sm nerdy-muted transition-colors group-hover:text-accent-cyan">{{ .view_all_label | default "View All Logs ->" }}</span>
       </a>

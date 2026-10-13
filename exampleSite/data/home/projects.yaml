@@ -1,0 +1,80 @@
+id: projects
+type: projects
+icon: code
+title: Projects
+items:
+  - title: PTA Learning Analytics Report Plugin
+    # title: PTA平台学情分析报告插件
+    role: Project Author
+    description: This project develops a PTA platform plugin based on multi-agent collaboration and static code analysis. It provides a real-time code diagnosis sidebar for students, ability profile reports for assignments, exams and whole semesters, as well as a class-wide learning dashboard for instructors. The system tracks the evolution of students' programming thinking and automatically generates teaching suggestions.
+    # 本项目设计了一款基于多智能体协作与静态代码分析的 PTA 平台（程序设计类实验辅助教学平台）学情分析报告插件，包含学生端代码实时诊断侧边栏、单次练习/单次考试/整个学期能力画像报告，以及教师端班级学情全景看板、学生代码思维演进追踪及教学建议生成功能。
+    tech:
+      - Vue3
+      - FastAPI
+      - LangGraph
+      - MySQL
+      - Redis
+    accent: purple
+    type: Personal
+    # stars: 2.4k
+    # links:
+    #   - label: Code
+    #     url: https://github.com/gopher/nexus-api-gateway
+    #     icon: github
+    #   - label: Live Demo
+    #     url: https://demo.example.com/nexus-api-gateway
+    #     icon: external
+  - title: Campus Mutual Aid Platform
+  # 校园互助平台
+    role: Developer
+    description: Built with Django under B/S architecture, this online community serves university students. It focuses on campus mutual assistance scenarios and integrates learning Q&A, information sharing, item exchange and real-time messaging functions.
+    # 本项目设计了一款基于 Django 框架搭建的 B/S 架构校园线上社区系统，专为高校学生打造，聚焦校园互助场景，集学习答疑、资讯分享、物品交换、实时沟通等功能于一体。
+    tech:
+      - HTML/CSS
+      - Django
+      - SQLite
+      - Redis
+      - Celery
+    accent: cyan
+    type: Collaboration
+  - title: Hanwen Zhijian — Ancient Chinese Character Recognition & Document Management System
+  # 汉文智鉴——古汉字智能识别与文献管理系统
+    role: Developer
+    description: Targeting challenges in the preservation and research of ancient documents in Northwest China, this system adopts YOLOv8 to detect and recognize characters on thousands of local land deed images, overcoming limitations of manual identification. Integrated with document management modules, it supports fast keyword retrieval of image archives for efficient storage and access of ancient materials.
+    # 本项目针对西北地区古文献保护与研究的难题，以 YOLOv8 模型为技术支撑，对数千张西北地区地契图片开展精准文字检测与识别，突破传统人工识别的局限。同时，系统融合文献管理功能，涵盖影像资料管理模块，用户可通过输入关键字，快速、准确地检索相关影像资料，实现对古文献的高效管理与便捷查阅。
+    tech:
+      - Flask
+      - HTML/CSS/JavaScript
+      - SQL Server
+      - YOLOv8
+      - DBSCAN
+      - Canvas
+    accent: cyan
+    type: Collaboration
+    # stars: 890
+    # links:
+    #   - label: Code
+    #     url: https://github.com/gopher/netops-cli
+    #     icon: github
+  - title: Picture Composition Class Teaching Assistant System Based on the Multi-rounds Question and Answering Interaction
+  # 基于多轮问答的儿童看图写话教学辅助系统
+    role: Developer
+    description: Designed to help young students practice picture-guided composition and reduce teachers' grading workload. This LLM-powered system supports multi-turn interactive guidance, optimized prompting and a modular scoring & classification mechanism.
+    # 为了辅助低年级学生进行看图写话练习，并为教师减轻批改作文的工作量，本项目设计了一个基于大语言模型的多轮互动、引导提示优化以及模块化评分分类机制的儿童看图写话教学辅助系统。
+    tech:
+      - Spring Boot
+      - MySQL
+      - BERT
+      - ResNet
+      - PCSBTT
+    accent: cyan
+    type: Collaboration
+  - title: Hazardous Materials Management System
+  # 危险品管理系统
+    role: Project Lead
+    description: Implemented in C language, this system helps warehouse administrators and operators manage hazardous material inventory, usage and procurement to ensure safety and compliance. It includes modules for information entry, inventory query, usage logging and procurement record tracking.
+    # 本项目设计了一款基于 C 语言开发的危险品管理系统，旨在帮助危险品仓库的管理人员及危险品使用者高效管理危险品的库存、使用和采购，确保安全合规。系统提供了危险品信息录入、库存查询、使用记录、采购记录等功能模块。
+    tech:
+      - C
+    accent: cyan
+    type: Collaboration

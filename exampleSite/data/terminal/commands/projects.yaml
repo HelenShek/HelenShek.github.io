@@ -2,34 +2,55 @@ name: projects
 label: Projects
 description: View my portfolio projects
 quick: true
-weight: 40
+weight: 50
 items:
-  - name: E-Commerce Platform API
-    type: Work
-    role: Technical lead — initial design and development
-    tech:
-      - Go
-      - PostgreSQL
-      - Docker
-    description: A robust REST API for a scalable e-commerce platform featuring JWT
-      authentication, Stripe integration, and advanced caching.
-    url: https://github.com/gopher/ecommerce-api
-  - name: Real-Time Collaboration Tool
-    type: Work
-    role: Co-maintainer
-    tech:
-      - React
-      - WebSockets
-      - Redis
-    description: A web-based workspace allowing multiple users to edit documents
-      simultaneously with low latency.
-    url: https://demo.example.com/collab
-  - name: CLI Task Manager
+  - name: PTA Learning Analytics Report Plugin
     type: Personal
-    role: Creator & maintianer
+    role: Project Author
     tech:
-      - Go
+      - Vue3
+      - FastAPI
+      - LangGraph
+      - MySQL
+      - Redis
+    description: A PTA plugin leveraging multi-agent systems and static code analysis. It delivers student-side real-time code diagnosis, multi-scale learning profiles, and a teacher dashboard for class analytics and automated teaching recommendations.
+    # url: https://github.com/gopher/ecommerce-api
+  - name: Campus Mutual Aid Platform
+    type: Collaboration
+    role: Developer
+    tech:
+      - HTML/CSS
+      - Django
       - SQLite
-    description: A terminal-based productivity tool to manage daily tasks, track
-      time, and generate reports.
-    url: https://github.com/gopher/cli-task
+      - Redis
+      - Celery
+    description: A Django-powered B/S campus community supporting Q&A, information sharing, item exchange and instant communication among college students.
+    # url: https://github.com/gopher/cli-task
+  - name: Hanwen Zhijian — Ancient Chinese Character Recognition & Document Management System
+    type: Collaboration
+    role: Developer
+    tech:
+      - Flask
+      - HTML/CSS/JavaScript
+      - SQL Server
+      - YOLOv8
+      - DBSCAN
+      - Canvas
+    description: A YOLOv8-based system for ancient character detection and recognition on Northwest China land deed images. It provides archive management and keyword search to streamline ancient document research.
+    # url: https://demo.example.com/collab
+  - name: Picture Composition Class Teaching Assistant System Based on the Multi-rounds Question and Answering Interaction
+    type: Collaboration
+    role: Developer
+    tech:
+      - Spring Boot
+      - MySQL
+      - BERT
+      - ResNet
+      - PCSBTT
+    description: An LLM-based teaching assistant for picture-guided writing. It features multi-turn prompting and modular scoring to assist young learners and ease teachers' grading burden.
+  - name: Hazardous Materials Management System
+    type: Collaboration
+    role: Developer
+    tech:
+      - C
+    description: A C-language system for hazardous material inventory, usage and procurement management. It supports data entry, record query and logging to guarantee operational safety and compliance.

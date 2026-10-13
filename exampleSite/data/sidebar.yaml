@@ -1,30 +1,29 @@
 profile:
-  name: "Mr. Gopher"
-  title: Backend Developer
-  avatar: "images/gopher.png"
-  description: Building scalable systems. Obsessed with clean code and modern web
-    architectures.
+  name: "Fengyuan Shi"
+  title: Computer Science Student
+  avatar: "images/profile.jpg"
+  description: Exploring applications of AI. Passionate about rigorous research and solid engineering implementation.
   status:
     label: Status
-    value: Open to Senior Roles
+    value: Open for Research Collaborations & New Grad Opportunities
     preference_label: Pref
-    preference: 100% Remote / Async
+    preference: On-site / Remote Available
   links:
     - icon: website
-      label: nerdy.hugo-themes.com
-      url: https://nerdy.hugo-themes.com
+      label: helenshek.github.io
+      url: https://helenshek.github.io/
     - icon: github
-      label: github.com/gopher
-      url: https://github.com/gopher
-    - icon: linkedin
-      label: linkedin.com/in/gopher
-      url: https://linkedin.com/in/gopher
-    - icon: x
-      label: "@gopher"
-      url: https://x.com/gopher
+      label: github.com/HelenShek
+      url: https://github.com/HelenShek
+    - icon: library
+      label: Fengyuan Shi
+      url: https://scholar.google.cz/citations?view_op=list_works&hl=zh-CN&user=BVyqi0UAAAAJ&gmla=AERr9JH-W8kOHqw62ey0tsEFByf4B9__JjPsrwgyywFP97OHL1AW2W3C1YaPDCJ3t31Dmh1RI8WJEWGjYVakUHcDFmprMVDVZnm27W5NBYKpF09ehFwvUWnLHkgf
+    # - icon: x
+    #   label: "@gopher"
+    #   url: https://x.com/gopher
     - icon: mail
-      label: hello@gopher.dev
-      url: mailto:hello@gopher.dev
+      label: shifengyuan@stumail.nwu.edu.cn
+      url: mailto:shifengyuan@stumail.nwu.edu.cn
 
 sections:
   - id: profile-stats
@@ -32,10 +31,10 @@ sections:
     title: Profile Stats
     items:
       - label: Experience
-        value: 5+ yrs
+        value: 2+ yrs Academic Research & Engineering Practice
         accent: emerald
       - label: Focus
-        value: Scalable Backends
+        value: the Application of AI
         accent: cyan
       - label: Debugging
         value: Persistent
@@ -47,10 +46,16 @@ sections:
     type: tags
     title: Core Stack
     items:
-      - Go
+      - C/C++
+      - Python
+      - Verilog HDL
+      - Assembly Language
+      - HTML5
+      - CSS3
+      - Vue3
       - Docker
-      - Kubernetes
-      - PostgreSQL
-      - AWS
-      - GCP
-      - Terraform
+      - Django
+      - MySQL/SQLite/SQL Server
+      - Pytorch
+      - SPSSPRO
+      - MATLAB

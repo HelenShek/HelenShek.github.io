@@ -1,6 +1,15 @@
-baseURL: "https://example.org/"
+baseURL: "https://helenshek.github.io/"
 locale: en-us
-title: Nerdy
+title: Fengyuan Shi' Personal Page
+security:
+  exec:
+    allow:
+      - '^(dart-)?sass$'
+      - '^go$'
+      - '^git$'
+      - '^node$'
+      - '^postcss$'
+      - '^tailwindcss$'
 disableKinds:
   - taxonomy
   - term

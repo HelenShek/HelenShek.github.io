@@ -2,17 +2,20 @@ name: contact
 label: Contact
 description: How to reach me
 quick: true
-weight: 50
+weight: 60
 intro: Let's build something awesome together!
-email: hello@gopher.dev
+email: shifengyuan@stumail.nwu.edu.cn
 links:
+  - label: Website
+    text: https://helenshek.github.io/
+    url: https://helenshek.github.io/
   - label: GitHub
-    text: https://github.com/gopher
-    url: https://github.com/gopher
-  - label: LinkedIn
-    text: https://linkedin.com/in/gopher
-    url: https://linkedin.com/in/gopher
-  - label: X
-    text: "@gopher"
-    url: https://x.com/gopher
+    text: https://github.com/HelenShek
+    url: https://github.com/HelenShek
+  - label: Google Scholar
+    text: Fengyuan Shi
+    url: https://scholar.google.cz/citations?view_op=list_works&hl=zh-CN&user=BVyqi0UAAAAJ&gmla=AERr9JH-W8kOHqw62ey0tsEFByf4B9__JjPsrwgyywFP97OHL1AW2W3C1YaPDCJ3t31Dmh1RI8WJEWGjYVakUHcDFmprMVDVZnm27W5NBYKpF09ehFwvUWnLHkgf
+  # - label: X
+  #   text: "@gopher"
+  #   url: https://x.com/gopher
 outro: Drop me a line or run the commands above to explore more.

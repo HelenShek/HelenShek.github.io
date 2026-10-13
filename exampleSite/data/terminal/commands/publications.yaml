@@ -1,0 +1,19 @@
+name: publications
+label: Publications
+description: View my portfolio publications
+quick: true
+weight: 40
+items:
+  - name: "Lightweight Edge Detection and High-Precision Cloud Classification: A Cloud-Edge Collaborative Two-Stage NIDS Architecture"
+    role: Lead Researcher
+    description: We design a lightweight cloud-edge collaborative two-stage Network Intrusion Detection Systems (NIDS) architecture balancing detection accuracy, resource consumption and real-time requirements in edge environments. Lightweight intrusion feature detection is executed on the edge side, while high-precision attack type classification is completed in the cloud. This design significantly reduces model complexity and computational overhead on edge devices while maintaining high accuracy and low false-negative rate, effectively improving the detection efficiency, practical deployability and response capability of the system.
+    url: https://www.mdpi.com/2076-3417/16/14/7302
+  - name: Multi-Agent Honeypot-Based Request-Response Context Dataset for Improved SQL Injection Detection Performance
+    role: Research Contributor
+    description: We build a context-aware SQL injection detection framework leveraging a multi-agent honeypot to construct a large request-response paired dataset. Experiments demonstrate that incorporating request-response context greatly improves detection performance against obfuscated and evolving SQL injection attacks.
+    url: https://ieeexplore.ieee.org/abstract/document/11460610
+  - name: Trajectory Analysis of Students' Problem-Solving Processes Based on Programming Error Sequences
+    role: Research Contributor
+    description: We propose an Error-Quotient-based behavioral representation to model programming learning trajectories from sequential code submission logs. Using mixture Markov models, we identify three distinct learner groups and analyze their problem-solving transition patterns in programming examinations.
+    url: https://dl.acm.org/doi/10.1145/3833142.3833157
+  

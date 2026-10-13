@@ -6,30 +6,30 @@ weight: 20
 categories:
   - key: core_languages
     items:
-      - JavaScript
-      - TypeScript
+      - C/C++
       - Python
-      - HTML/CSS
-  - key: frontend
-    items:
-      - React.js
-      - Next.js
-      - Tailwind CSS
-      - Redux
+      - Verilog HDL
+      - Assembly Language
+      - HTML/CSS/Vue
   - key: backend
     items:
       - Node.js
-      - Express
       - Django
-      - REST APIs
+      - FastAPI
   - key: database
     items:
-      - PostgreSQL
-      - MongoDB
+      - MySQL
+      - SQLite
+      - SQL Server
       - Redis
   - key: devops_tools
     items:
       - Git
       - Docker
-      - AWS
       - Linux / Bash
+  - key: ai_data_analysis
+    items:
+      - LangGraph
+      - Prompt Engineering
+      - MATLAB
+      - SPSSPRO

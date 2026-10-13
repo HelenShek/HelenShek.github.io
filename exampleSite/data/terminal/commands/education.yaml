@@ -1,0 +1,17 @@
+name: education
+label: Education
+description: Academic background
+quick: true
+weight: 30
+roles:
+  - title: Postgraduate Student
+    company: School of Cyber Science and Technology, Sun Yat-sen University
+    period: Sep 2027 - Jun 2030
+    highlights:
+      - Further work coming soon.
+  - title: Undergraduate Student
+    company: College of Computer Science, Northwest University
+    period: Sep 2023 - Jun 2027
+    highlights:
+      - Awarded National Scholarship for Undergraduate Students in the sophomore year.
+      - Participated in multiple research projects, engineering projects, campus events and volunteer activities; served as a member of the Student Union.

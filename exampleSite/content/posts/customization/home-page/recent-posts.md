@@ -46,6 +46,7 @@ icon: article
 title: Recent Posts
 limit: 3
 section: posts
+show_view_all: false
 view_all_label: View all posts ->
 ```
 
@@ -57,6 +58,8 @@ Useful fields:
 - `title`: heading text for the section.
 - `limit`: maximum number of recent posts to show before the view-all card.
 - `section`: content section to read pages from. The example site uses `posts`.
+- `sort_by`: optional page field to sort by in descending order instead of page date, such as `Params.publication_date`.
+- `show_view_all`: set to `false` to hide the card linking to the full section index.
 - `view_all_label`: text for the card that links to the full section index.
 
 ## How posts are selected

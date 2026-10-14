@@ -1,0 +1,17 @@
+name: education
+label: Education
+description: 教育经历
+quick: true
+weight: 30
+roles:
+  - title: 本科生
+    company: 西北大学
+    period: 2023 年 9 月 - 2027 年 6 月
+    highlights:
+      - 大二期间获得本科生国家奖学金。
+      - 参与多项科研、项目、校园活动与志愿服务，并曾任学生会干事。
+  - title: 硕士研究生
+    company: 中山大学
+    period: 2027 年 9 月 - 2030 年 6 月
+    highlights:
+      - 敬请期待。

@@ -1,5 +1,5 @@
 {{- $path := .path | default slice -}}
-{{- $title := .title | default "Logs" -}}
+{{- $title := .title | default (cond (eq site.Language.Lang "zh") "文章" "Logs") -}}
 {{- $accent := .accent -}}
 {{- $description := .description -}}
 {{- $date := .date -}}
@@ -46,7 +46,7 @@
         {{ with $readingTime }}
           <div class="flex items-center gap-2">
             {{ partial "components/icon.html" (dict "name" "document" "class" "h-4 w-4 text-slate-600 dark:text-slate-500") }}
-            <span>{{ . }} min read</span>
+            <span>{{ . }} {{ cond (eq site.Language.Lang "zh") "分钟阅读" "min read" }}</span>
           </div>
         {{ end }}
         {{ with $tags }}

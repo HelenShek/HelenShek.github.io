@@ -1,0 +1,17 @@
+user: fengyuan
+host: portfolio
+directory: "~"
+window_title: "fengyuan@portfolio:~"
+auto_command: about
+boot_messages:
+  - 正在初始化系统……
+  - 正在加载个人资料模块：完成
+  - 会话已恢复：{date}
+help_message_prefix: "输入 "
+help_message_suffix: " 查看可用命令。"
+unknown_command_message: "命令不存在。输入 'help' 查看可用命令。"
+builtins:
+  - name: help
+    description: 列出可用命令
+  - name: whoami
+    description: 显示当前用户

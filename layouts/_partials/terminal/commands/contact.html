@@ -1,4 +1,5 @@
-{{- $labelWidth := len "Email" -}}
+{{- $emailLabel := cond (eq site.Language.Lang "zh") "邮箱" "Email" -}}
+{{- $labelWidth := len $emailLabel -}}
 {{- range .links -}}
   {{- if gt (len .label) $labelWidth -}}
     {{- $labelWidth = len .label -}}
@@ -7,7 +8,7 @@
 <pre class="font-mono whitespace-pre-wrap leading-relaxed">{{ .intro }}
 
 {{ with .email -}}
-<span class="text-accent-cyan">{{ printf "%*s : " $labelWidth "Email" }}</span><a
+<span class="text-accent-cyan">{{ printf "%*s : " $labelWidth $emailLabel }}</span><a
   class="pointer-events-auto relative z-50 text-accent-amber underline"
   href="mailto:{{ . }}"
 >{{ . }}</a>

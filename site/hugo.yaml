@@ -1,6 +1,17 @@
 baseURL: "https://helenshek.github.io/"
-locale: en-us
-title: Fengyuan Shi' Personal Page
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+languages:
+  en:
+    label: English
+    locale: en-US
+    title: Fengyuan Shi' Personal Page
+    weight: 1
+  zh:
+    label: 中文
+    locale: zh-CN
+    title: 石丰源的个人主页
+    weight: 2
 security:
   exec:
     allow:

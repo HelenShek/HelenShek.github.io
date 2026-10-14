@@ -15,6 +15,8 @@
 - `site/hugo.yaml` imports `github.com/hugo-themes/nerdy` with `module.replacements: github.com/hugo-themes/nerdy -> ../..`; keep this local-module wiring intact.
 - Docs are authored as posts under `site/content/posts/`, using subject/topic/series folders; keep docs user-focused, not maintainer release checklists.
 - The home page is data-driven from `site/data/home/*`, `site/data/sidebar.yaml`, and `site/data/terminal/*`.
+- The Chinese home page is served at `/zh/` and uses translated data under `site/data/zh/`; translated publication pages use `.zh.md` files beside their English counterparts.
+- Keep the English and Chinese home-page data in sync structurally: translate content in `site/data/zh/home/`, `site/data/zh/sidebar.yaml`, and `site/data/zh/terminal/` without changing the shared theme layouts unless display behavior needs to change.
 
 ## Theme wiring gotchas
 

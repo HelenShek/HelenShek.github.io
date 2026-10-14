@@ -55,6 +55,7 @@ Alpine.data('themeToggle', () => ({
 
 Alpine.data('terminalPortfolio', (config = {}) => ({
   commands: {},
+  config,
   quickCommands: [],
   history: [],
   input: '',
@@ -106,18 +107,20 @@ Alpine.data('terminalPortfolio', (config = {}) => ({
     this.isProcessing = true;
 
     const now = new Date();
-    const bootMessages = [
-      'System initializing...',
-      'Loading profile modules: OK',
-      `Restored session: ${now.toDateString()}`,
-    ];
+    const bootMessages = this.config.bootMessages.length
+      ? this.config.bootMessages.map((message) => message.replace('{date}', new Intl.DateTimeFormat(this.config.locale).format(now)))
+      : [
+          'System initializing...',
+          'Loading profile modules: OK',
+          `Restored session: ${now.toDateString()}`,
+        ];
 
     for (const message of bootMessages) {
       this.pushOutput(`<div class="mb-1 text-xs text-slate-600 dark:text-slate-500">${this.escapeHtml(message)}</div>`);
       await this.wait(this.reducedMotion ? 0 : 100);
     }
 
-    this.pushOutput('<div class="mb-4 mt-2 text-slate-700 dark:text-slate-400">Type <span class="font-bold text-accent-cyan">help</span> to see available commands.</div>');
+    this.pushOutput(`<div class="mb-4 mt-2 text-slate-700 dark:text-slate-400">${this.escapeHtml(this.config.helpMessagePrefix)}<span class="font-bold text-accent-cyan">help</span>${this.escapeHtml(this.config.helpMessageSuffix)}</div>`);
 
     this.isProcessing = false;
     this.bootCompleted = true;
@@ -130,8 +133,10 @@ Alpine.data('terminalPortfolio', (config = {}) => ({
 
   recordThemeChange(isDark) {
     if (!this.bootCompleted) return;
-    const mode = isDark ? 'Dark' : 'Light';
-    this.pushOutput(`<div class="mb-4 text-xs italic text-slate-700 dark:text-slate-400">[System] Theme switched to ${mode} mode.</div>`);
+    const message = this.config.locale.startsWith('zh')
+      ? `【系统】已切换到${isDark ? '黑夜' : '白天'}模式。`
+      : `[System] Theme switched to ${isDark ? 'Dark' : 'Light'} mode.`;
+    this.pushOutput(`<div class="mb-4 text-xs italic text-slate-700 dark:text-slate-400">${this.escapeHtml(message)}</div>`);
   },
 
   async submit() {
@@ -205,14 +210,17 @@ Alpine.data('terminalPortfolio', (config = {}) => ({
     }
 
     if (command === 'sudo') {
-      return '<div class="mb-4 font-bold text-red-500">guest is not in the sudoers file. This incident will be reported.</div>';
+      const message = this.config.locale.startsWith('zh')
+        ? 'guest 不在 sudoers 文件中。此事件将被记录。'
+        : 'guest is not in the sudoers file. This incident will be reported.';
+      return `<div class="mb-4 font-bold text-red-500">${this.escapeHtml(message)}</div>`;
     }
 
     if (this.commands[command]) {
       return `<div class="mb-4 text-slate-800 dark:text-slate-300">${this.commands[command].html}</div>`;
     }
 
-    return `<div class="mb-4 text-red-400">bash: ${this.escapeHtml(command)}: command not found. Type 'help' to see available commands.</div>`;
+    return `<div class="mb-4 text-red-400">bash: ${this.escapeHtml(command)}: ${this.escapeHtml(this.config.unknownCommandMessage)}</div>`;
   },
 
   pushCommand(command) {

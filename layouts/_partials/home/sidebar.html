@@ -1,4 +1,4 @@
-{{ $sidebar := hugo.Data.sidebar | default dict }}
+{{ $sidebar := .sidebar | default hugo.Data.sidebar | default dict }}
 {{ if or $sidebar.profile $sidebar.sections }}
   <aside class="nerdy-sticky-sidebar lg:sticky lg:top-12 lg:col-span-4 lg:h-fit lg:self-start">
     <div class="flex flex-col gap-6">

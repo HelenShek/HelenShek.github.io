@@ -1,0 +1,18 @@
+name: publications
+label: Publications
+description: 查看我的学术论文
+quick: true
+weight: 40
+items:
+  - name: Lightweight Edge Detection and High-Precision Cloud Classification: A Cloud-Edge Collaborative Two-Stage NIDS Architecture
+    role: 第一作者
+    description: 设计云边协同的两阶段网络入侵检测架构，在边缘端执行轻量级入侵特征检测，在云端完成高精度攻击类型分类，以兼顾边缘场景下网络入侵检测系统的检测准确率、资源消耗和实时性的要求。
+    url: https://www.mdpi.com/2076-3417/16/14/7302
+  - name: Multi-Agent Honeypot-Based Request-Response Context Dataset for Improved SQL Injection Detection Performance
+    role: 第三作者（学生二作）
+    description: 利用多智能体蜜罐系统构建请求-响应上下文 SQL 注入数据集，并提出上下文感知的 SQL 注入检测方案，以提升对混淆和不断演变的攻击的检测能力。
+    url: https://ieeexplore.ieee.org/abstract/document/11460610
+  - name: Trajectory Analysis of Students' Problem-Solving Processes Based on Programming Error Sequences
+    role: 第五作者
+    description: 基于代码提交记录序列构建学生编程学习行为轨迹表示，并使用混合马尔可夫模型识别不同类型的学习者群体及其在编程考试中的问题解决过程。
+    url: https://dl.acm.org/doi/10.1145/3833142.3833157

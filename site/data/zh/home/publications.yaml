@@ -1,0 +1,8 @@
+id: publications
+type: recent-posts
+icon: article
+title: 发表论文
+limit: 3
+section: publications
+sort_by: Params.publication_date
+show_view_all: false

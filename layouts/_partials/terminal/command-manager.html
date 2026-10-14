@@ -5,15 +5,15 @@
 <div class="hidden" aria-hidden="true">
   <template
     data-terminal-command="help"
-    data-label="Help"
-    data-description="List available commands"
+    data-label="{{ cond (eq site.Language.Lang "zh") "帮助" "Help" }}"
+    data-description="{{ cond (eq site.Language.Lang "zh") "列出可用命令" "List available commands" }}"
     data-weight="0"
   >{{ partial "terminal/commands/help.html" (dict "commands" $commands "builtins" $builtins) }}</template>
 
   <template
     data-terminal-command="whoami"
-    data-label="Whoami"
-    data-description="Print current user"
+    data-label="{{ cond (eq site.Language.Lang "zh") "我是谁" "Whoami" }}"
+    data-description="{{ cond (eq site.Language.Lang "zh") "显示当前用户" "Print current user" }}"
     data-weight="90"
   >{{ partial "terminal/commands/whoami.html" $config }}</template>
 

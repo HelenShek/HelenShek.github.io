@@ -1,0 +1,35 @@
+name: skills
+label: Skills
+description: 技术栈与专业技能
+quick: true
+weight: 20
+categories:
+  - key: 编程语言
+    items:
+      - C/C++
+      - Python
+      - Verilog HDL
+      - Assembly Language
+      - HTML/CSS/Vue
+  - key: 后端
+    items:
+      - Node.js
+      - Django
+      - FastAPI
+  - key: 数据库
+    items:
+      - MySQL
+      - SQLite
+      - SQL Server
+      - Redis
+  - key: 开发工具
+    items:
+      - Git
+      - Docker
+      - Linux / Bash
+  - key: 人工智能与数据分析
+    items:
+      - LangGraph
+      - Prompt Engineering
+      - MATLAB
+      - SPSSPRO

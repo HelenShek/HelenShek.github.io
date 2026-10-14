@@ -1,0 +1,58 @@
+profile:
+  name: 石丰源
+  title: 计算机专业学生
+  avatar: "images/profile 1.jpg"
+  description: 探索人工智能的开发与应用，致力于严谨的科研工作与扎实的工程实践。
+  status:
+    label: 状态
+    value: 寻找科研合作与企业实习机会
+    preference_label: 偏好
+    preference: 线下或远程均可
+  links:
+    - icon: website
+      label: helenshek.github.io
+      url: https://helenshek.github.io/
+    - icon: github
+      label: github.com/HelenShek
+      url: https://github.com/HelenShek
+    - icon: library
+      label: Fengyuan Shi - Google Scholar
+      url: https://scholar.google.cz/citations?view_op=list_works&hl=zh-CN&user=BVyqi0UAAAAJ&gmla=AERr9JH-W8kOHqw62ey0tsEFByf4B9__JjPsrwgyywFP97OHL1AW2W3C1YaPDCJ3t31Dmh1RI8WJEWGjYVakUHcDFmprMVDVZnm27W5NBYKpF09ehFwvUWnLHkgf
+    - icon: mail
+      label: shifengyuan@stumail.nwu.edu.cn
+      url: mailto:shifengyuan@stumail.nwu.edu.cn
+
+sections:
+  - id: profile-stats
+    type: stats
+    title: 个人概况
+    items:
+      - label: 经验
+        value: 2 年以上科研与工程实践
+        accent: emerald
+      - label: 专注
+        value: 人工智能的应用
+        accent: cyan
+      - label: 特点
+        value: 注重分析与调试
+        accent: amber
+      - label: 工程理念
+        value: 务实
+        accent: purple
+  - id: core-stack
+    type: tags
+    title: 技术栈
+    items:
+      - C/C++
+      - Python
+      - Verilog HDL
+      - Assembly Language
+      - HTML5
+      - CSS3
+      - Vue3
+      - Docker
+      - Django
+      - MySQL/SQLite/SQL Server
+      - PyTorch
+      - SPSSPRO
+      - MATLAB

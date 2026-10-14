@@ -1,0 +1,57 @@
+id: projects
+type: projects
+icon: code
+title: 项目经历
+items:
+  - title: PTA 平台学情分析报告插件
+    role: 项目作者
+    description: 本项目面向 PTA 程序设计类实验辅助教学平台，基于多智能体协作与静态代码分析，为学生提供实时代码诊断、单次练习/单次考试/整个学期能力画像报告，为教师提供班级学情全景看板、学生编程思维演进追踪和教学建议。
+    tech:
+      - Vue3
+      - FastAPI
+      - LangGraph
+      - MySQL
+      - Redis
+    accent: purple
+    type: 个人项目
+  - title: 校园互助平台
+    role: 开发者
+    description: 本项目设计了一款基于 Django 框架搭建的 B/S 架构校园线上社区平台，专为高校学生打造，聚焦校园互助场景，集学习答疑、资讯分享、物品交换、实时沟通等功能于一体。
+    tech:
+      - HTML/CSS
+      - Django
+      - SQLite
+      - Redis
+      - Celery
+    accent: cyan
+    type: 合作项目
+  - title: 汉文智鉴——古汉字智能识别与文献管理系统
+    role: 开发者
+    description: 本项目针对西北地区古文献保护与研究的难题，以 YOLOv8 模型为技术支撑，对数千张西北地区地契图片开展精准文字检测与识别，突破传统人工识别的局限。同时，系统融合文献管理功能，涵盖影像资料管理模块，用户可通过输入关键字，快速、准确地检索相关影像资料，实现对古文献的高效管理与便捷查阅。
+    tech:
+      - Flask
+      - HTML/CSS/JavaScript
+      - SQL Server
+      - YOLOv8
+      - DBSCAN
+      - Canvas
+    accent: cyan
+    type: 合作项目
+  - title: 基于多轮问答的儿童看图写话教学辅助系统
+    role: 开发者
+    description: 本项目设计了一个面向低年级学生看图写话练习的 LLM 教学辅助系统，提供多轮互动指导、引导提示优化以及模块化评分与分类功能，帮助学生练习并减轻教师批改负担。
+    tech:
+      - Spring Boot
+      - MySQL
+      - BERT
+      - ResNet
+      - PCSBTT
+    accent: cyan
+    type: 合作项目
+  - title: 危险品管理系统
+    role: 项目负责人
+    description: 本项目设计了一款基于 C 语言开发的危险品管理系统，支持危险品信息录入、库存查询、使用记录和采购记录管理，旨在帮助危险品仓库的管理人员及危险品使用者高效且安全合规地管理与使用危险品。
+    tech:
+      - C
+    accent: cyan
+    type: 合作项目

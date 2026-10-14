@@ -1,7 +1,13 @@
 {{ define "main" }}
-  {{ $home := hugo.Data.home | default dict }}
+  {{ $localizedData := hugo.Data }}
+  {{ if eq site.Language.Lang "zh" }}
+    {{ $localizedData = index hugo.Data "zh" | default dict }}
+  {{ end }}
+  {{ $home := index $localizedData "home" | default dict }}
   {{ $sectionsConfig := index $home "sections" | default dict }}
   {{ $sectionItems := $sectionsConfig.items | default slice }}
+  {{ $terminalData := index $localizedData "terminal" | default dict }}
+  {{ $sidebarData := index $localizedData "sidebar" | default dict }}
 
   <div class="nerdy-page-surface nerdy-page-surface--home">
     <div class="nerdy-ambient-bg"></div>
@@ -9,10 +15,10 @@
 
     <div class="nerdy-container pt-16 lg:pt-20">
       <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-12">
-        {{ partial "home/sidebar.html" . }}
+        {{ partial "home/sidebar.html" (dict "sidebar" $sidebarData) }}
 
         <div class="flex flex-col gap-8 lg:col-span-8">
-          {{ partial "terminal.html" . }}
+          {{ partial "terminal.html" (dict "terminal" $terminalData) }}
 
           {{ if gt (len $sectionItems) 0 }}
             {{ range $sectionItems }}

@@ -1,0 +1,53 @@
+name: projects
+label: 项目
+description: 查看我的项目经历
+quick: true
+weight: 50
+items:
+  - name: PTA 平台学情分析报告插件
+    type: 个人项目
+    role: 项目作者
+    tech:
+      - Vue3
+      - FastAPI
+      - LangGraph
+      - MySQL
+      - Redis
+    description: 结合多智能体协作与静态代码分析，为学生提供实时代码诊断、单次练习/单次考试/整个学期能力画像报告，为教师提供班级学情全景看板、学生编程思维演进追踪和教学建议。
+  - name: 校园互助平台
+    type: 合作项目
+    role: 开发者
+    tech:
+      - HTML/CSS
+      - Django
+      - SQLite
+      - Redis
+      - Celery
+    description: 面向高校学生的线上社区平台，聚焦校园互助场景，提供学习答疑、资讯分享、物品交换、实时沟通功能。
+  - name: 汉文智鉴——古汉字智能识别与文献管理系统
+    type: 合作项目
+    role: 开发者
+    tech:
+      - Flask
+      - HTML/CSS/JavaScript
+      - SQL Server
+      - YOLOv8
+      - DBSCAN
+      - Canvas
+    description: 使用 YOLOv8 检测与识别西北地区地契图像中的古汉字，并提供影像资料、文献的管理和关键词检索功能。
+  - name: 基于多轮问答的儿童看图写话教学辅助系统
+    type: 合作项目
+    role: 开发者
+    tech:
+      - Spring Boot
+      - MySQL
+      - BERT
+      - ResNet
+      - PCSBTT
+    description: 基于大语言模型，为儿童看图写话练习提供多轮互动指导，并通过模块化评分帮助教师减轻批改负担。
+  - name: 危险品管理系统
+    type: 合作项目
+    role: 项目负责人
+    tech:
+      - C
+    description: 使用 C 语言开发，面向危险品仓库管理人员与危险品使用者，支持危险品信息录入、库存查询、使用记录和采购记录管理。

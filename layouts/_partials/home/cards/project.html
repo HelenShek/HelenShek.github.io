@@ -30,7 +30,7 @@
         {{ end }}
       </div>
     {{ end }}
-    <span class="mt-4 font-mono text-xs text-accent-cyan">Click to read full description</span>
+    <span class="mt-4 font-mono text-xs text-accent-cyan">{{ cond (eq site.Language.Lang "zh") "点击查看完整介绍" "Click to read full description" }}</span>
   </button>
   <dialog
     id="{{ $dialogID }}"
@@ -45,7 +45,7 @@
           <h3 id="{{ $dialogID }}-title" class="text-xl font-bold tracking-tight nerdy-card-title {{ $accentClasses.title }}">{{ .title }}</h3>
           {{ with .role }}<p class="mt-1 text-sm nerdy-muted-soft">{{ . }}</p>{{ end }}
         </div>
-        <button class="shrink-0 rounded-lg border border-slate-300 px-3 py-1.5 text-sm nerdy-muted transition-colors hover:text-accent-cyan dark:border-slate-700" type="button" aria-label="Close project description" x-on:click="$refs.projectDescription.close()">Close</button>
+        <button class="shrink-0 rounded-lg border border-slate-300 px-3 py-1.5 text-sm nerdy-muted transition-colors hover:text-accent-cyan dark:border-slate-700" type="button" aria-label="{{ cond (eq site.Language.Lang "zh") "关闭项目介绍" "Close project description" }}" x-on:click="$refs.projectDescription.close()">{{ cond (eq site.Language.Lang "zh") "关闭" "Close" }}</button>
       </div>
       <p class="mt-5 whitespace-pre-line text-sm leading-7 nerdy-muted">{{ .description }}</p>
       {{ with .tech }}

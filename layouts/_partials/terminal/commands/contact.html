@@ -1,4 +1,4 @@
-{{- $emailLabel := cond (eq site.Language.Lang "zh") "邮箱" "Email" -}}
+{{- $emailLabel := "Email" -}}
 {{- $labelWidth := len $emailLabel -}}
 {{- range .links -}}
   {{- if gt (len .label) $labelWidth -}}

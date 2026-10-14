@@ -28,7 +28,7 @@ sections:
     title: 个人概况
     items:
       - label: 经验
-        value: 2 年以上科研与工程实践
+        value: 2 年以上科研与工程实践经历
         accent: emerald
       - label: 专注
         value: 人工智能的应用

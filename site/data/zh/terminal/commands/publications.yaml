@@ -4,7 +4,7 @@ description: 查看我的学术论文
 quick: true
 weight: 40
 items:
-  - name: Lightweight Edge Detection and High-Precision Cloud Classification: A Cloud-Edge Collaborative Two-Stage NIDS Architecture
+  - name: "Lightweight Edge Detection and High-Precision Cloud Classification: A Cloud-Edge Collaborative Two-Stage NIDS Architecture"
     role: 第一作者
     description: 设计云边协同的两阶段网络入侵检测架构，在边缘端执行轻量级入侵特征检测，在云端完成高精度攻击类型分类，以兼顾边缘场景下网络入侵检测系统的检测准确率、资源消耗和实时性的要求。
     url: https://www.mdpi.com/2076-3417/16/14/7302

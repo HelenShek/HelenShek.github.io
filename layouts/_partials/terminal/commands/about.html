@@ -1,4 +1,4 @@
-<pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="text-accent-purple">{{ .greeting }}</span>{{ if eq site.Language.Lang "zh" }}我是<span class="font-bold text-accent-emerald">{{ .person_name }}</span>。{{ else }} I'm <span class="font-bold text-accent-emerald">{{ .person_name }}</span>. {{ end }}{{ .summary }}
+<pre class="font-mono whitespace-pre-wrap leading-relaxed"><span class="text-accent-purple">{{ .greeting }}</span>{{ if eq site.Language.Lang "zh" }}我是<span class="font-bold text-accent-emerald">{{ .person_name }}</span>{{ else }} I'm <span class="font-bold text-accent-emerald">{{ .person_name }}</span>{{ end }}{{ if eq site.Language.Lang "zh" }}。{{ else }}. {{ end }}{{ .summary }}
 
 {{ range .details -}}
 {{ . }}
